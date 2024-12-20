@@ -3,27 +3,23 @@
 \section{Inleiding}%
 \label{sec:inleiding}
 \noindent
-In de wereld van vandaag heeft elk bedrijf een website, zeker kleine ondernemingen zoals een privé-wellness gebruiken dit om klanten te informeren en de mogelijkheid te geven om afspraken te boeken en betalingen te verrichten. Voor bedrijven met een beperkte IT-kennis en middelen biedt een Content Management Systeem (CMS) een praktische oplossing voor het beheren van een website.
+In de wereld van vandaag heeft elk bedrijf een website, dit kan voor kleine ondernemingen een grote uitdaging voorstellen. Vaak word de keuze gemaakt om een content management systeem (CMS) te gebruiken, maar bij het kiezen van een CMS komt veel kijken. Elk CMS heeft zijn eigen plus- en minpunten \autocite{Khalil2024}. Dit onderzoek richt zich op het vinden van een CMS-oplossing die de beste balans biedt tussen gebruiksvriendelijkheid, kosten en prestaties, specifiek afgestemd op de behoeften van een nagelsalon.
 \\ \\
-De keuze van een CMS is echter niet eenvoudig, elk systeem heeft zijn sterkte en zwaktepunten zoals kosten, gebruiksgemak, prestaties. Dit onderzoek richt zich op het identificeren van het meest geschikte CMS voor een specifieke privé-wellness op basis van deze factoren.
+De doelgroep van dit onderzoek is een nagel salon waarbij de eigenaar een basis aan computervaardigheden heeft \autocite{Mesanovic2024} en die de behoefte heeft aan een gebruiksvriendelijke en onderhoudsvriendelijk website. Dit type onderneming heeft vaak beperkte middelen en weinig tijd om zich in complexe technologie te verdiepen.
 \\ \\
-De eigenaar van een privé-wellness wil een nieuwe website laten bouwen die aantrekkelijk en gebruiksvriendelijk is voor klanten, maar ook eenvoudig te beheren. Het bedrijf heeft echter weinig kennis over CMS, waardoor het moeilijk is om de juiste keuze te maken. Dit onderzoek is gericht op IT-professionals en heeft als doel een systematische vergelijking van verschillende CMS’en uit te voeren om tot een technisch onderbouwde aanbeveling te komen. De centrale vraag van dit onderzoek luidt daarom: Welke CMS-oplossing biedt de meest gebruiksvriendelijke, kostenefficiënte en technisch geschikte basis voor het ontwikkelen van een website voor een privé-wellness?
+Het nagelsalon wil een eenvoudige, veilige en functionele website, maar wordt geconfronteerd met een overvloed aan CMS-opties. Elke keuze brengt verschillende uitdagingen met zich mee op het gebied van gebruiksgemak, kosten en prestaties. De centrale onderzoeksvraag van dit onderzoek luidt: "Welke CMS-oplossing biedt de beste balans tussen gebruiksvriendelijkheid, kosten en prestaties voor een nagelsalon?"
 \\ \\
-Het resultaat van dit onderzoek omvat een uitgebreid rapport waarin de verschillende CMS's vergeleken en gedetaileerderd besproken worden. Dit rapport bevat een concrete aanbeveling voor de privé-wellness gebaseerd op de noden van dit product. Daarnaast worden er werkende prototypes van de website ontwikkeld met elk CMS, waarmee de aanbeveling wordt ondersteund.
+Om deze vraag te beantwoorden, worden specifieke deelvragen onderzocht, waaronder de typische vereisten voor een website van een kleine onderneming zoals een nagelsalon, de uitdagingen waarmee kleine bedrijven worden geconfronteerd bij het kiezen van een CMS, de prestaties van geselecteerde CMS’en op specifieke criteria, en de kosten en onderhoudsvereisten van deze systemen.
+\\ \\
+Het einddoel van dit onderzoek is om, na een analyse van de klant zijn vereisten en uitdagingen, een vergelijking maken van de verschillende CMS-opties. Op basis van deze vergelijking zal een aanbeveling worden gedaan voor het CMS dat het beste aansluit bij de noden van het nagelsalon. Daarnaast zal ik proof-of-concepts (PoC's) ontwikkelen voor een aantal geselecteerde CMS'en, waarin de aanbevolen systemen worden gedemonstreerd met een eenvoudige website. Deze PoC's zullen de klant de mogelijkheid bieden om feedback te geven op de verschillende systemen, zodat de uiteindelijke keuze goed onderbouwd kan worden. Door deze aanpak wordt een praktische en toepasbare oplossing geboden, specifiek afgestemd op kleine ondernemingen zoals het nagelsalon.
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{Stand van zaken}%
 \label{sec:Stand van zaken}
 
-% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
-% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
-%   geen onderdeel is van de zin.
-% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
-%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
-%   ...'')
-
-Content management (CM) kan in simpele termen omschreven worden als het proces van het maken, verzamelen en structureren van informatie zodat ze kunnen worden opgeslagen, opgevraagd, gepubliceerd, bijgewerkt en hergebruikt kunnen worden op elke gewenste manier \autocite{Sunny2008}. Een content management systeem (CMS) is een software systeem dat gebruikt word voor content management, het bied een manier om grote hoeveelheden web-based informatie te managen zonder de moeilijkheden van programmeren.
+\noindent
+\textbf{Content management (CM)} kan in simpele termen omschreven worden als het proces van het maken, verzamelen en structureren van informatie zodat ze kunnen worden opgeslagen, opgevraagd, gepubliceerd, bijgewerkt en hergebruikt kunnen worden op elke gewenste manier \autocite{Sunny2008}. Een \textbf{content management systeem (CMS)} is een software systeem dat gebruikt word voor content management, het bied een manier om grote hoeveelheden web-based informatie te managen zonder de moeilijkheden van programmeren.
 \\ \\
 Er zijn verschillende soorten content management systemen \autocite{Singh2023}:
 \begin{itemize}
@@ -47,8 +43,6 @@ Het kiezen van een type zullen we ook bespreken in deze paper.
 Het onderzoek van \textcite{Khalil2024} onderzoekt WordPress, Drupal en Jooml op basis van verschillende requirements, hij concludeert dat elke CMS zijn eigen plus- en minpunten heeft. Bij het kiezen van een CMS moeten we dus per situatie apart bekijken welk systeem het beste voldoet aan de specifieke eisen van de organisatie. Terwijl WordPress uitblinkt in gebruiksvriendelijkheid en snelheid van implementatie, biedt Drupal meer flexibiliteit en schaalbaarheid voor complexe websites. Joomla wordt beschreven als een middenweg, geschikt voor gebruikers die behoefte hebben aan een balans tussen gebruiksgemak en technische mogelijkheden. \textcite{Khalil2024} benadrukt dat de keuze voor een CMS afhankelijk is van factoren zoals de grootte van de website, de technische expertise van de gebruikers, en de specifieke functionele vereisten van het project.
 \\ \\
 Wat ook nog een make or break kan zijn is de veiligheid. Volgens \textcite{MarianVladut2021} heeft WordPress ongeveer 18 miljoen installaties, dit is een marktaandeel van 64.2\%. Doordat er zoveel installaties hiervan zijn is WordPress een aantrekkelijk doelwit voor cyberaanvallen. Een kwetsbaarheid in de kernsoftware, plug-ins of thema's kan potentieel miljoenen websites tegelijk blootstellen aan risico's. Dit maakt het cruciaal dat WordPress-gebruikers regelmatig updates uitvoeren en adequate beveiligingsmaatregelen treffen om hun sites te beschermen.
-
-
 
 
 %---------- Methodologie ------------------------------------------------------
