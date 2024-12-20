@@ -10,6 +10,7 @@
 
 % Invoegen bibliografiebestand
 \addbibresource{voorstel.bib}
+\usepackage{pdfpages}
 
 % Informatie over de opleiding, het vak en soort opdracht
 \studyprogramme{Professionele bachelor toegepaste informatica}
@@ -23,14 +24,14 @@
 \academicyear{2024-2025} % TODO: pas het academiejaar aan
 
 % TODO: Werktitel
-\title{Evaluatie van CMS-oplossingen voor het ontwikkelen van een geoptimaliseerde website voor een privé-wellness}
+\title{De ideale CMS-oplossing: Een balans tussen kosten, gebruiksgemak en prestaties voor nagelsalons}
 
 % TODO: Studentnaam en emailadres invullen
 \author{Bente De Wilde}
 \email{bente.dewilde@student.hogent.be}
 
 % TODO: Geef de co-promotor op
-\supervisor[Co-promotor]{/}
+\supervisor[Co-promotor]{S. Mesanovic (Sabi Nails)}
 
 % Binnen welke specialisatierichting uit 3TI situeert dit onderzoek zich?
 % Kies uit deze lijst:
@@ -49,7 +50,11 @@
 \begin{document}
 
 \begin{abstract}
-  Hier schrijf je de samenvatting van je voorstel, als een doorlopende tekst van één paragraaf. Let op: dit is geen inleiding, maar een samenvattende tekst van heel je voorstel met inleiding (voorstelling, kaderen thema), probleemstelling en centrale onderzoeksvraag, onderzoeksdoelstelling (wat zie je als het concrete resultaat van je bachelorproef?), voorgestelde methodologie, verwachte resultaten en meerwaarde van dit onderzoek (wat heeft de doelgroep aan het resultaat?)
+    In de huidige digitale wereld is een professionele online aanwezigheid essentieel voor bedrijven van elke omvang, maar het kiezen van een geschikt Content Management Systeem (CMS) kan uitdagend zijn, vooral voor kleine ondernemingen met beperkte middelen en technische kennis. Dit onderzoek richt zich op het vinden van de meest geschikte CMS-oplossing voor een nagelsalon, met specifieke aandacht voor gebruiksvriendelijkheid, kosten, prestaties en veiligheid.
+    
+    Door middel van interviews met de eigenaar van het nagelsalon worden de unieke behoeften en vereisten van dit type onderneming vastgesteld. Vervolgens wordt een vergelijkende analyse uitgevoerd van drie veelgebruikte CMS’en: WordPress, Joomla en Drupal. Op basis van vooraf gedefinieerde criteria worden proof-of-concepts (PoC’s) ontwikkeld en getest door de eigenaar om de praktische toepasbaarheid en gebruiksvriendelijkheid van elk systeem te beoordelen.
+    
+    De resultaten tonen aan dat WordPress het beste scoort op gebruiksvriendelijkheid en kostenbeheersing, waardoor het de meest geschikte keuze lijkt voor een nagelsalon met beperkte technische expertise. Dit onderzoek biedt een concrete aanbeveling en een demonstratie van de aanbevolen oplossing, waarmee de eigenaar van het nagelsalon een goed geïnformeerde keuze kan maken en kan profiteren van een eenvoudige, veilige en functionele website.
 \end{abstract}
 
 \tableofcontents
@@ -59,5 +64,9 @@
 \input{voorstel-inhoud}
 
 \printbibliography[heading=bibintoc]
+
+\newpage
+\appendix
+\includepdf[pages=-,alt={'Vragenlijst co-promotor'}]{./Vragenlijst_co-promotor.pdf}
 
 \end{document}

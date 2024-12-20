@@ -3,38 +3,89 @@
 \section{Inleiding}%
 \label{sec:inleiding}
 \noindent
-In de wereld van vandaag heeft elk bedrijf een website, zeker kleine ondernemingen zoals een privé-wellness gebruiken dit om klanten te informeren en de mogelijkheid te geven om afspraken te boeken en betalingen te verrichten. Voor bedrijven met een beperkte IT-kennis en middelen biedt een Content Management Systeem (CMS) een praktische oplossing voor het beheren van een website.
+In de wereld van vandaag heeft elk bedrijf een website, dit kan voor kleine ondernemingen een grote uitdaging voorstellen. Vaak word de keuze gemaakt om een content management systeem (CMS) te gebruiken, maar bij het kiezen van een CMS komt veel kijken. Elk CMS heeft zijn eigen plus- en minpunten \autocite{Khalil2024}. Dit onderzoek richt zich op het vinden van een CMS-oplossing die de beste balans biedt tussen gebruiksvriendelijkheid, kosten en prestaties, specifiek afgestemd op de behoeften van een nagelsalon.
 \\ \\
-De keuze van een CMS is echter niet eenvoudig, elk systeem heeft zijn sterkte en zwaktepunten zoals kosten, gebruiksgemak, prestaties. Dit onderzoek richt zich op het identificeren van het meest geschikte CMS voor een specifieke privé-wellness op basis van deze factoren.
+De doelgroep van dit onderzoek is een nagel salon waarbij de eigenaar een basis aan computervaardigheden heeft, zoals op genomen in de vragenlijst, en die de behoefte heeft aan een gebruiksvriendelijke en onderhoudsvriendelijk website. Dit type onderneming heeft vaak beperkte middelen en weinig tijd om zich in complexe technologie te verdiepen.
 \\ \\
-De eigenaar van een privé-wellness wil een nieuwe website laten bouwen die aantrekkelijk en gebruiksvriendelijk is voor klanten, maar ook eenvoudig te beheren. Het bedrijf heeft echter weinig kennis over CMS, waardoor het moeilijk is om de juiste keuze te maken. Dit onderzoek is gericht op IT-professionals en heeft als doel een systematische vergelijking van verschillende CMS’en uit te voeren om tot een technisch onderbouwde aanbeveling te komen. De centrale vraag van dit onderzoek luidt daarom: Welke CMS-oplossing biedt de meest gebruiksvriendelijke, kostenefficiënte en technisch geschikte basis voor het ontwikkelen van een website voor een privé-wellness?
+Het nagelsalon wil een eenvoudige, veilige en functionele website, maar wordt geconfronteerd met een overvloed aan CMS-opties. Elke keuze brengt verschillende uitdagingen met zich mee op het gebied van gebruiksgemak, kosten en prestaties. De centrale onderzoeksvraag van dit onderzoek luidt: "Welke CMS-oplossing biedt de beste balans tussen gebruiksvriendelijkheid, kosten en prestaties voor een nagelsalon?"
 \\ \\
-Het resultaat van dit onderzoek omvat een uitgebreid rapport waarin de verschillende CMS's vergeleken en gedetaileerderd besproken worden. Dit rapport bevat een concrete aanbeveling voor de privé-wellness gebaseerd op de noden van dit product. Daarnaast worden er werkende prototypes van de website ontwikkeld met elk CMS, waarmee de aanbeveling wordt ondersteund.
+Om deze vraag te beantwoorden, worden specifieke deelvragen onderzocht, waaronder de typische vereisten voor een website van een kleine onderneming zoals een nagelsalon, de uitdagingen waarmee kleine bedrijven worden geconfronteerd bij het kiezen van een CMS, de prestaties van geselecteerde CMS’en op specifieke criteria, en de kosten en onderhoudsvereisten van deze systemen.
+\\ \\
+Het einddoel van dit onderzoek is om, na een analyse van de klant zijn vereisten en uitdagingen, een vergelijking maken van de verschillende CMS-opties. Op basis van deze vergelijking zal een aanbeveling worden gedaan voor het CMS dat het beste aansluit bij de noden van het nagelsalon. Daarnaast zal ik proof-of-concepts (PoC's) ontwikkelen voor een aantal geselecteerde CMS'en, waarin de aanbevolen systemen worden gedemonstreerd met een eenvoudige website. Deze PoC's zullen de klant de mogelijkheid bieden om feedback te geven op de verschillende systemen, zodat de uiteindelijke keuze goed onderbouwd kan worden. Door deze aanpak wordt een praktische en toepasbare oplossing geboden, specifiek afgestemd op kleine ondernemingen zoals het nagelsalon.
+
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{Stand van zaken}%
 \label{sec:Stand van zaken}
 
-/
-
-% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
-% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
-%   geen onderdeel is van de zin.
-% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
-%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
-%   ...'')
-
+\noindent
+\textbf{Content management (CM)} kan in simpele termen omschreven worden als het proces van het maken, verzamelen en structureren van informatie zodat ze kunnen worden opgeslagen, opgevraagd, gepubliceerd, bijgewerkt en hergebruikt kunnen worden op elke gewenste manier \autocite{Sunny2008}. Een \textbf{content management systeem (CMS)} is een software systeem dat gebruikt word voor content management, het bied een manier om grote hoeveelheden web-based informatie te managen zonder de moeilijkheden van programmeren.
+\\ \\
+Er zijn verschillende soorten content management systemen \autocite{Singh2023}:
+\begin{itemize}
+    \item \textbf{Web Content Management (WCM)}: Beheert inhoud met als doel deze online te verspreiden naar een breed publiek. Het scheidt content van publicatie naar verschillende kanalen.
+    \item \textbf{Enterprise Content Management (ECM)}:\\Richt zich op intern zakelijke inhoud, zoals rapporten en memo’s, die belangrijk zijn voor organisatorische processen maar niet voor massaconsumptie bedoeld zijn.
+    \item \textbf{Digital Asset Management (DAM)}: Beheer van digitale media, inclusief aanpassing, met focus op metadata en transformatie van digitale objecten.
+    \item \textbf{Records Management (RM)}: Beheert zakelijke transactiegegevens die niet voor iedereen relevant zijn, maar essentieel zijn voor analisten. Het richt zich op retentie en toegangscontrole.
+\end{itemize}
+\\
+In deze paper spreken we over een Web Content Management System (WCM) wanneer we een CMS noemen.
+\\ \\
+De verschillende types CMS waaruit men kan kiezen, zijn onder andere:
+\begin{itemize}
+    \item \textbf{Headless CMS}: Biedt contentcreatie en\\-bewerking en maakt deze toegankelijk via een API. Het veronderstelt dat de front-end ontwikkeling door een apart team wordt gedaan.
+    \item \textbf{Decoupled CMS}: Combineert de functies van een headless CMS met sjablonen en tools om inhoud eenvoudiger te publiceren.
+    \item \textbf{Hybride CMS}: Een combinatie van traditionele CMS-functies en headless contentbeheer, vaak aangeduid als API-first of API-driven CMS.
+\end{itemize}
+\\
+Het kiezen van een type zullen we ook bespreken in deze paper.
+\\ \\
+Het onderzoek van \textcite{Khalil2024} onderzoekt WordPress, Drupal en Jooml op basis van verschillende requirements, hij concludeert dat elke CMS zijn eigen plus- en minpunten heeft. Bij het kiezen van een CMS moeten we dus per situatie apart bekijken welk systeem het beste voldoet aan de specifieke eisen van de organisatie. Terwijl WordPress uitblinkt in gebruiksvriendelijkheid en snelheid van implementatie, biedt Drupal meer flexibiliteit en schaalbaarheid voor complexe websites. Joomla wordt beschreven als een middenweg, geschikt voor gebruikers die behoefte hebben aan een balans tussen gebruiksgemak en technische mogelijkheden. \textcite{Khalil2024} benadrukt dat de keuze voor een CMS afhankelijk is van factoren zoals de grootte van de website, de technische expertise van de gebruikers, en de specifieke functionele vereisten van het project.
+\\ \\
+Wat ook nog een make or break kan zijn is de veiligheid. Volgens \textcite{MarianVladut2021} heeft WordPress ongeveer 18 miljoen installaties, dit is een marktaandeel van 64.2\%. Doordat er zoveel installaties hiervan zijn is WordPress een aantrekkelijk doelwit voor cyberaanvallen. Een kwetsbaarheid in de kernsoftware, plug-ins of thema's kan potentieel miljoenen websites tegelijk blootstellen aan risico's. Dit maakt het cruciaal dat WordPress-gebruikers regelmatig updates uitvoeren en adequate beveiligingsmaatregelen treffen om hun sites te beschermen.
 
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 
-/
+\noindent
+Dit onderzoek combineert kwalitatieve en experimentele technieken om de onderzoeksvraag en deelvragen te beantwoorden. Het proces begint met een requirementsanalyse, gebaseerd op interviews met de eigenaar van het nagelsalon. Tijdens deze gesprekken zijn specifieke behoeften en uitdagingen vastgesteld, zoals het belang van gebruiksvriendelijkheid, minimale onderhoudsvereisten en kostenbeheersing. Deze informatie vormt de basis voor de criteria waaraan een geschikt CMS moet voldoen.
+\\ \\
+Na de analyse wordt een vergelijkende studie uitgevoerd van verschillende CMS-oplossingen, deze beoordeeld op vooraf vastgestelde criteria: gebruiksvriendelijkheid, kosten en onderhoudsvereisten, prestaties en veiligheid. De resultaten van deze vergelijking leiden tot een shortlist van de meest veelbelovende CMS-opties voor het nagelsalon.
+\\ \\
+Op basis van deze shortlist worden er minstens twee CMS’en proof-of-concepts (PoC’s) ontwikkeld. Deze PoC's omvatten een eenvoudige website die voldoen aan de vastgestelde vereisten. Het hosten van de PoC's zal lokaal gebeuren om de kosten zo laag mogelijk te houden.
+\\ \\
+De PoC's worden vervolgens getest door de belanghebbenden zelf, zonder enige voorgaande uitleg. Hiermee zal de eenvoudigheid van het gebruik getest worden. Tijdens de testen zullen er typische taken uitgevoerd worden die de klant eerder opsomde in het interview, zoals het aanpassen van inhoud, het uploaden van foto’s en het beheren van de boekingen. De feedback word verzameld door observatie en een korte nabespreking, waarmee inzicht wordt verkregen in hoe intuïtief en gebruiksvriendelijk de systemen zijn
+\\ \\
+Ten slotte worden de resultaten van de studie en de gebruikertests gecombineerd om een onderbouwde aanbeveling te formuleren. Het onderzoek resulteert in een rapport waarin de CMS-opties worden beoordeeld en een aanbeveling wordt gedaan voor het CMS dat het beste aansluit bij de behoeften van het nagelsalon. Daarnaast wordt een proof-of-concept gepresenteerd van de aanbevolen oplossing om de praktische toepasbaarheid aan te tonen.
+\\ \\
+De tijdsplanning voor het onderzoek is als volgt:
+De requirementsanalyse duurt ongeveer een week, gevolgd door twee weken voor de vergelijkende studie van de CMS’en. De ontwikkeling van de PoC’s neemt drie weken in beslag, waarna één week wordt uitgetrokken voor gebruikerstests. De laatste twee weken worden besteed aan het analyseren van de resultaten en het opstellen van het eindrapport.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Mijn voorspelling voor dit onderzoek is dat Drupal de meest gebruiksvriendelijke en goedkoopste oplossing.
+\noindent
+Het onderzoek zal resulteren in een uitgebreide vergelijking van drie CMS'en: WordPress, Joomla en Drupal. Van elk systeem zal er een PoC gemaakt worden die beoordeeld zal worden door de klant. De verwachte uitkomst is dat WordPress het hoogst scoort op alle vlakken, waardoor het een geschikte keuze lijkt voor gebruikers met beperkte technische kennis, zoals de eigenaar van het nagelsalon.
+\\ \\
+Verwachte resulaten in tabelvorm:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{lccc}
+        \toprule
+        Criterium            & WordPress & Joomla & Drupal \\
+        \midrule
+        Gebruiksvriendelijkheid & 8/10      & 6/10   & 4/10   \\
+        Kosten en onderhoud   & 9/10      & 7/10   & 5/10   \\
+        Prestaties            & 7/10      & 8/10   & 9/10   \\
+        Veiligheid            & 6/10      & 7/10   & 9/10   \\
+        \bottomrule
+    \end{tabular}
+    \caption{Vergelijking van WordPress, Joomla en Drupal op verschillende criteria.}
+    \label{tab:cms-comparison}
+\end{table}
+\\ \\ 
+De doelgroep van het onderzoek, een nagelsalon met beperkte technische kennis, heeft baat bij een concreet en praktisch advies over welke CMS-oplossing het meest geschikt is voor hun situatie. Dit onderzoek biedt hen niet alleen een onderbouwde aanbeveling maar ook een demonstratie van de aanbevolen oplossing via een proof-of-concept. Hierdoor kan de eigenaar met vertrouwen een keuze maken en de stap zetten naar een professionele online aanwezigheid.
