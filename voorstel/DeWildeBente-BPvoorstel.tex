@@ -10,6 +10,7 @@
 
 % Invoegen bibliografiebestand
 \addbibresource{voorstel.bib}
+\usepackage{pdfpages}
 
 % Informatie over de opleiding, het vak en soort opdracht
 \studyprogramme{Professionele bachelor toegepaste informatica}
@@ -59,5 +60,9 @@
 \input{voorstel-inhoud}
 
 \printbibliography[heading=bibintoc]
+
+\newpage
+\appendix
+\includepdf[pages=-,alt={'Vragenlijst co-promotor'}]{./Vragenlijst_co-promotor.pdf}
 
 \end{document}
